@@ -1,0 +1,39 @@
+{
+	"properties": {
+		"displayName": "Audits Storage Account for Storage File Data SMB Share Elevated Contributor RBAC role for an AVD AD group",
+		"policyType": "Custom",
+		"mode": "All",
+		"description": "Audits Storage Account for Storage File Data SMB Share Elevated Contributor RBAC role for an AVD AD group",
+		"metadata": {
+			"category": "Zero Trust"
+		},
+		"parameters": {},
+		"policyRule": {
+			"if": {
+				"allOf": [
+					{
+						"field": "type",
+						"equals": "Microsoft.Storage/storageAccounts"
+					}
+				]
+			},
+			"then": {
+				"effect": "AuditIfNotExists",
+				"details": {
+					"type": "Microsoft.Authorization/roleAssignments",
+					"existenceCondition": {
+						"allOf": [{
+								"field": "Microsoft.Authorization/roleAssignments/roleDefinitionId",
+								"equals": "/subscriptions/e121d000-54c3-45ff-bd0e-afd6686e8c1e/providers/Microsoft.Authorization/roleDefinitions/a7264617-510b-434b-a828-9731dc254ea7" // RBAC role definition ID for Contributor role
+							}, 
+							{
+								"field": "Microsoft.Authorization/roleAssignments/principalId",
+								"equals": "e29754ab-f58a-44dc-bc3a-a567fe02a463"
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}
