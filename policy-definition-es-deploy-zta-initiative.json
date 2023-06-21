@@ -34,7 +34,7 @@
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/34c877ad-507e-4c82-993e-3452a6e0ad3c"
       },
       {
-        "policyDefinitionId": "/subscriptions/e121d000-54c3-45ff-bd0e-afd6686e8c1e/providers/Microsoft.Authorization/policyDefinitions/StorageRBACAudit"
+        "policyDefinitionId": "/subscriptions/${subscriptionid}/providers/Microsoft.Authorization/policyDefinitions/StorageRBACAudit"
       },
       {
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9df61aa2-b10c-4efe-aae0-295cc936930b"
