@@ -68,6 +68,9 @@ module avdZtaPolicySetDefinition './modules/policyset.bicep' = {
     metadata: policySet[0].libDefinition.properties.metadata
     policyDefinitions: policySet[0].libDefinition.properties.policyDefinitions
   }
+  dependsOn:[
+    policy
+  ]
 }
 
 
