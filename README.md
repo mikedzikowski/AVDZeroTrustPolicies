@@ -5,7 +5,7 @@ Example
 
 ![image](https://github.com/mikedzikowski/AVDZeroTrustPolicies/assets/34066455/d1417168-999c-4c21-aed6-e1287fd5b4b6)
 
--Policies Currently Included
+Policies Currently Included
 
 Azure Virtual Desktop service should use private link
 
