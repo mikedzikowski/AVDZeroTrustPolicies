@@ -42,7 +42,10 @@ Accounts with owner permissions on Azure resources should be MFA enabled
 [Preview]: Secure Boot should be enabled on supported Windows virtual machines
 
 Accounts with read permissions on Azure resources should be MFA enabled
+
 Accounts with write permissions on Azure resources should be MFA enabled
+
 Azure Defender for servers should be enabled
+
 Microsoft Defender for Storage (Classic) should be enabled
 
